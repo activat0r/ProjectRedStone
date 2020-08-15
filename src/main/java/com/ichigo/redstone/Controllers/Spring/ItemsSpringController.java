@@ -3,31 +3,23 @@ package com.ichigo.redstone.Controllers.Spring;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
-
-import com.ichigo.redstone.Model.Item;
-import com.ichigo.redstone.Model.Cart;
 
 import com.ichigo.redstone.Services.CartService;
 
 
-
-
-@RequestMapping("/cart")
+@RequestMapping("/items")
 @Controller
 //@Component
-public class CartSpringController {
+public class ItemsSpringController {
 
 
 	@Autowired
 	private CartService cs; // dependency
 
-	public CartSpringController() {
+	public ItemsSpringController() {
 		System.out.println("CartSpringController created...");
 	}
 
@@ -53,11 +45,6 @@ public class CartSpringController {
 	   map.addAttribute("cartItemsList", cs.getAllItems());
 	   return "cartItemsList";
   }
+}
   
  
-  
-}
-
-
-
-

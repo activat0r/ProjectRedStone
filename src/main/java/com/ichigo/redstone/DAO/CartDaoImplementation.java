@@ -54,6 +54,7 @@ public class CartDaoImplementation implements CartDao {
 
 	@Override
 	public ArrayList<Cart> getCart() {
+		System.out.println("retuning");
 		return CartDataMap.INSTANCE.getCart();
 	}
 

@@ -34,6 +34,7 @@ private CartDao cartDao; //dependency
 
 	@Override
 	public ArrayList<Cart> getAllItems() {
+		System.out.println("returning all items");
 		return cartDao.getCart();
 	}
 

@@ -40,6 +40,14 @@ public class CartRestController {
 		@ApiResponse(code=500,message="We are facing some issues. Please try again later."),
 	})
 	
+
+	@ApiOperation("GET SINGLE ITEM")
+	@GetMapping("/getItem")
+	public String hiSoloGET(){
+		return "Listing single product in cart";
+	}
+
+	
 	@ApiOperation("Get all items in cart")
 	@GetMapping("/getItems")
 	public String hiGET(){

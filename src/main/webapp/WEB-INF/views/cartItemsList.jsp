@@ -15,5 +15,33 @@
 <body>
 
 <h3>Welcome to shopping page</h3>
+
+
+<div class="container">
+
+
+<table class="table table-hover table-striped table-responsive">
+<thead>
+<tr>
+<th>Item ID</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<c:forEach  items="${cartItemsList}"  var="c">
+<tr>
+<td> ${c.itemId}</td>
+<td>${c.count}</td>
+</tr>
+</c:forEach>
+
+</tbody>
+
+
+</table>
+
+</div>
+
+
 </body>
 </html>

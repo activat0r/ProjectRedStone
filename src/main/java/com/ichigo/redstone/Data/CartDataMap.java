@@ -6,6 +6,7 @@ import java.util.Map;
 
 
 import com.ichigo.redstone.Model.Cart;
+import com.ichigo.redstone.Model.Item;
 
 public enum CartDataMap {
 
@@ -16,7 +17,14 @@ private ArrayList<Cart> cartItemsList;
 
 private CartDataMap() {
 	cartItemsList=new ArrayList<>();
+	Cart item1=new Cart(1,10);
+	Cart item2=new Cart(2,5);
+	Cart item3=new Cart(3,1);
 
+
+	cartItemsList.add(item1);
+	cartItemsList.add(item2);
+	cartItemsList.add(item3);
 }
 
 public void addItem(int itemID) {
@@ -30,6 +38,7 @@ public void addItem(int itemID) {
 	}
 
 public ArrayList<Cart> getCart() {
+	System.out.println("cartitemslist datamap  "+cartItemsList.size());
 	return cartItemsList;
 }
 	

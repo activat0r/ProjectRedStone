@@ -1,0 +1,25 @@
+server:
+  port: 8090
+    
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: info,health
+            
+            
+spring:
+  security:
+    user:
+      name: aditya
+      password: aditya       
+      
+      
+      
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+           

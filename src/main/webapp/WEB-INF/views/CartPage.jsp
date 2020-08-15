@@ -8,6 +8,6 @@
 </head>
 <body>
 <h3><center>Welcome to project Redstone</center></h3>
-<h6>Created on 02 August 2020</h3>
+<h6>Created on 02 August 2020</h6>
 </body>
 </html>
