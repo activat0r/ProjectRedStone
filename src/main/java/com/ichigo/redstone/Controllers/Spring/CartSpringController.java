@@ -34,8 +34,8 @@ public class CartSpringController {
 	
   @RequestMapping(value="/getAllItemsInCart",method=RequestMethod.GET)	
   public String getAllItemsInCart(ModelMap map){
-	  map.addAttribute("cartItemsList", cs.getAllItems());	  
-	  return "cartItemsList";
+	  map.addAttribute("market", cs.getAllItems());	  
+	  return "market";
   }
   
   

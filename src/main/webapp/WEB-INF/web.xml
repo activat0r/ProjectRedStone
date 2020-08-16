@@ -19,7 +19,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>spring</servlet-name>
-		<url-pattern>/spring/*</url-pattern>
+		<url-pattern>/cart/*</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>rest</servlet-name>
